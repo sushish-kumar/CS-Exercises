@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Javascript: Print Window</title>
+    <script src="scripts.js"></script>
     <script>
-        function printThisWindow(){
-            window.print();
-        }
-        function setButton(){
-            document.getElementById("myButton").onclick=function(){printThisWindow()};
-        }
         window.onload=setButton;
     </script>
 </head>

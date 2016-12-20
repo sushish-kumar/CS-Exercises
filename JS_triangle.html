@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Javascript: Area of a Triangle</title>
+    <script src="scripts.js"></script>
     <script>
-
-
+        window.onload = setButtonArea;
     </script>
 </head>
 <body>
-
+Get the area of this triangle:
+<form id="formTriangle">
+    Side 1: <input id="inputSide1" type="text" value="5"/><br/>
+    Side 2: <input id="inputSide2" type="text" value="6"/><br/>
+    Side 3: <input id="inputSide3" type="text" value="7"/><br/>
+    <input id="buttonArea" type="button" value="Get Area! >>"/> <input id="inputAreaTriangle" type="text"
+                                                                       value="Area of Triangle"/>
+</form>
 </body>
 </html>

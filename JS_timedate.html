@@ -3,30 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript: Time & Date</title>
+    <script src="scripts.js"></script>
     <script>
-        function doTimeDate(){
-            var myWeekday=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            var myMonth=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-            var myDate = new Date();
-            var myToday = myWeekday[myDate.getDay()];
-            var myMonth = myMonth[myDate.getMonth()];
-            var myHour = (myDate.getHours()>0 && myDate.getHours()<12)?myDate.getHours():(myDate.getHours()===0 || myDate.getHours()===12)?12:myDate.getHours()-12;
-            var myTime = myHour +":"+ myDate.getMinutes();
-            var myTimeOfDay = (myDate.getHours()<12) ? "AM":"PM";
-            document.getElementById("dasTimeDate").innerHTML=
-                "Today is " +
-                myToday +", "+
-                myMonth +" "+
-                myDate.getDate() +", "+
-                myDate.getFullYear() +"<br />"+
-                "Current time is: " +
-                myTime + " "+ myTimeOfDay;
-        }
         window.onload=doTimeDate;
     </script>
 </head>
 <body>
     <p id="dasTimeDate"></p>
-    <p>Added some extra stuff.</p>
 </body>
 </html>
