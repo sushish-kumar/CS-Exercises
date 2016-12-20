@@ -1,7 +1,5 @@
-/**
- * Created by smillaraaq on 12/19/16.
- */
-//ALL SCRIPTS FOR TEST EXERCISES
+/* Created by smillaraaq on 12/19/16. */
+//ALL SCRIPTS FOR JS EXERCISES
 
 //================================
 //TIME and DATE
@@ -55,3 +53,22 @@ function setButtonArea() {
     };
 }
 
+//================================
+//ROTATE STRING
+//================================
+function rotateString(dasString) {
+    var stringToRotate = dasString.value;
+    var arrayHolder = [];
+    for (i = 0; i < stringToRotate.length; i++) {
+        arrayHolder.unshift(stringToRotate[i]);
+    }
+    var rotatedString = arrayHolder.join(""); //use .join() to remove commas
+    document.getElementById("textRotatedString").value = rotatedString;
+
+    //var rotatedString=stringToRotate.reverse();
+}
+function setRotateButton() {
+    document.getElementById("buttonRotate").onclick = function () {
+        rotateString(document.getElementById("textStringToRotate"));
+    };
+}
