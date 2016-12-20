@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript: Print Window</title>
+    <script>
+        function printThisWindow(){
+            window.print();
+        }
+        function setButton(){
+            document.getElementById("myButton").onclick=function(){printThisWindow()};
+        }
+        window.onload=setButton;
+    </script>
+</head>
+<body>
+    <form id="myForm">
+        <input id="myButton" type="button" value="Click me, to print this window!" />
+    </form>
+</body>
+</html>
