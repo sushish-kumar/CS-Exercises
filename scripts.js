@@ -54,3 +54,6 @@ function setButtonArea() {
         getArea();
     };
 }
+
+
+//test
