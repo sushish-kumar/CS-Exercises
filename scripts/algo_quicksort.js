@@ -1,3 +1,5 @@
+// partition sort
+
 function quickSort(arr){
   if(arr.length<2){
     return arr;
@@ -16,5 +18,4 @@ function quickSort(arr){
   }
   return result.concat(quickSort(less),pivot,quickSort(more));
 }
-console.log(quickSort([4,5,3,7,2])
-);
+console.log(quickSort([4,5,3,7,2]));
