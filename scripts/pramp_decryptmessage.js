@@ -57,3 +57,6 @@ function decryptPramp(word){
   return decryption
 }
 console.log('Pramp Solution ==>',decryptPramp('dnotq'));
+
+
+// https://www.pramp.com/challenge/8noLWxLP6JUZJ2bA2rnx
