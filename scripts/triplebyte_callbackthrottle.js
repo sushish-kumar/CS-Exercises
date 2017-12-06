@@ -20,13 +20,3 @@ throttle(20, true, false, 0, [0,10,20,30]); //[50]
 // 20, false, true, 20, [0,10,20,30]	[0,20] //[0,40]
 // 20, true, true, 0, [0,10,50] //[0,30,50,70]
 // 20, true, true, 10, [0,10,50]	//[0,10,20,30,50,60,70]
-
-
-Hi 1706!
-  Hope your week is off to a great start.
-  Grace Hopper is starting a newsletter that will be a place to celebrate alum wins, share opportunities, and ask for help.
-                                                                                                                        If you’re interested in sharing something in the newsletter, please fill out this form by 10/26.
-
-
-Thanks,
-  Alice
