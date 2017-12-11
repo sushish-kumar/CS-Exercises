@@ -1,13 +1,14 @@
 // fibonacci
 // find the nth fibonacci number by adding the previous 2 numbers in the series
-
+// fib(0)=0 fib(1)=1 fib(10)=55. here fib starts at 0
+// sometimes fib(0) is considered 1, here fib starts at 1
 
 // while loop with push/shift
 function fib(n){
   if(n<2) return n;
 
   let count=0;
-  let arr=[0,1]; // let arr=[0,1,1,2,3,5,8,13,21];
+  let arr=[0,1]; // let arr=[0,1,1,2,3,5,8,13,21];  1,2,3,5,8,13,21,34,55,89
 
   while(count <= n-2){
     arr.push(arr[0]+arr[1]);

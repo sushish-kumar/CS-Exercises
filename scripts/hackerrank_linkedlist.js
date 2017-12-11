@@ -3,7 +3,7 @@ var Node = function(data) {
   this.next = null;
 }
 
-
+// create a linked list to work with
 var node1=new Node(1);
 var node2=new Node(2);
 var node3=new Node(3);
@@ -19,6 +19,18 @@ function print(head) {
     console.log(head.data);
     if(head.next){
       print(head.next);
+    }
+  }
+}
+
+// no recursion
+function print2(head) {
+  while(head){
+    console.log(head.data);
+    if(head.next){
+      head=head.next;
+    }else{
+      head=null;
     }
   }
 }
