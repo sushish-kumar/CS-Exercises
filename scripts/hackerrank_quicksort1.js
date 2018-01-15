@@ -18,4 +18,4 @@ function quickSort(arr){
   }
   return result.concat(less,pivot,more).join(' ');
 }
-quickSort([4,5,3,7,2]);
+console.log(quickSort([4,5,3,7,2]));
