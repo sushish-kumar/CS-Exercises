@@ -26,19 +26,6 @@ function BinarySearchTree() {
 }
 
 BinarySearchTree.prototype.findInOrderSuccessor = function(inputNode) {
-
-
-	//left,right
-
-	//check right
-
-	//check parent only if l/r were null
-
-	//check parent until the parent has a left node and is larger than value
-
-	// var rightMostMinValue=minValue(inputNode.right);
-	// var leftMostMinValue=
-
 	if(inputNode.right){
 		// return leftmost node
 		return minValue(inputNode.right);
