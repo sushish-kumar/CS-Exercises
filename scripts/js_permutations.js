@@ -1,11 +1,13 @@
 // find all unique permutations of [1,2,3]
 
+// get array len down to 2. swap those and concat on one item
+
 function perms(arr) {
   let result=[];
 
   let ele=arr.slice(0,1);
   let slice=arr.slice(1);
-  console.log(ele,slice);
+  // console.log(ele,slice);
 
   if(slice.length>2){
       return ele.concat(perms(slice));
@@ -13,6 +15,7 @@ function perms(arr) {
 
   result.push(ele.concat(slice[0]).concat(slice[1]));
   result.push(ele.concat(slice[1]).concat(slice[0]));
+	console.log(result);
   return result;
 
   // for(let i=0; i< arr.length; i++){
@@ -32,7 +35,7 @@ function perms(arr) {
   // }
 }
 
-// console.log(perms([1,2,3,4]));
+console.log(perms([1,2,3,4]));
 
 function getAllPermutations(string) {
 	var results = [];
@@ -53,4 +56,4 @@ function getAllPermutations(string) {
 	}
 	return results;
 }
-console.log(getAllPermutations('abcd'));
+// console.log(getAllPermutations('abcd'));

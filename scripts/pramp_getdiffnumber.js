@@ -30,7 +30,7 @@ function quickSort(arr){
   return result.concat(less,pivot,more);
 }
 
-console.log(getDifferentNumber([1,2,0,3,4,5,6]));
+//console.log(getDifferentNumber([1,2,0,3,4,5,6]));
 
 // https://www.pramp.com/challenge/aK6V5GVZ9MSPqvG1vwQp
 
@@ -40,7 +40,7 @@ console.log(getDifferentNumber([1,2,0,3,4,5,6]));
 //
 // Your algorithm should be efficient, both from a time and a space complexity perspectives.
 //
-//   Solve first for the case when you’re NOT allowed to modify the input arr. If successful and still have time, see if you can come up with an algorithm with an improved space complexity when modifying arr is allowed. Do so without trading off the time complexity.
+// Solve first for the case when you’re NOT allowed to modify the input arr. If successful and still have time, see if you can come up with an algorithm with an improved space complexity when modifying arr is allowed. Do so without trading off the time complexity.
 //
 //   Analyze the time and space complexities of your algorithm.
 //
@@ -49,3 +49,24 @@ console.log(getDifferentNumber([1,2,0,3,4,5,6]));
 // input:  arr = [0, 1, 2, 3]
 //
 // output: 4
+
+function getDiffNumber(arr){
+  // sort
+  // do a while loop inc count check if exists in arr. if not return
+  arr.sort((a,b) => a-b);
+  let count = arr[0];
+  let max = arr[arr.length-1];
+
+  while(count !== max){
+    if(arr.indexOf(count) === -1){
+      return count;
+    }
+    count++;
+  }
+  return max+1;
+}
+
+
+console.log(getDiffNumber([0,1,3,4,5]));
+
+// big o O(n*m)

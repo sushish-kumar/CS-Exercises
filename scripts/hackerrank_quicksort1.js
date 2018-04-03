@@ -16,6 +16,6 @@ function quickSort(arr){
       more.push(arr[i]);
     }
   }
-  return result.concat(less,pivot,more).join(' ');
+  return result.concat(quickSort(less),pivot,quickSort(more)).join(' ');
 }
 console.log(quickSort([4,5,3,7,2]));

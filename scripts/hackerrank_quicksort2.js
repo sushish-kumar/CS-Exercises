@@ -16,6 +16,6 @@ function quickSort(arr){
   }
   // console.log(less,pivot,more);
   // console.log(result.concat(less,pivot,more).join(' '));
-  // return result.concat(quickSort(less),pivot,quickSort(more)).join(' ');
+  return result.concat(quickSort(less),pivot,quickSort(more)).join(' ');
 }
-console.log(quickSort([ 5, 8, 1, 3, 7, 9, 2 ]));
+console.log(quickSort([ 5, 8, 1, 3, 7, 9, 2, 4, 6 ]));
