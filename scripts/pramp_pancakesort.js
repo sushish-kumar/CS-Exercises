@@ -50,10 +50,6 @@ function pancakeSort(arr) {
 	return pancakeSort(arr.slice(0,arr.length-1)).concat(arr.slice(arr.length-1));
 }
 
-
-
-
-
 let arr=[1,2,3,4,5,6], k=3;
 let arr2=[2, 1, 4, 3, 5];
 let arr3=[1, 5, 4, 3, 2];
