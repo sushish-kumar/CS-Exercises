@@ -24,6 +24,10 @@ arr=[
 ];
 //==> 4,5,6,4,3,7,8,9,1,2,3,2
 
+// Best Case Efficiency: changes pointers based on curr ele O(n) + O(m) = O(n)
+// Worst Case:
+// Time: O(n) * O(m) where n is the len of the arr, m is the len of sub-arr ?
+// Space: O(1)
 function spiralCopy(arr){
     let top = 0,
         bott = arr.length-1,
@@ -32,10 +36,10 @@ function spiralCopy(arr){
     let result = '';
     let dir = 'top';
 
-    while((top <= bott) && (left <= right)){
+    while((top <= bott) && (left <= right)){ //O(n)
         // top row
         if(dir==='top'){
-            for(let i=left; i<=right; i++){
+            for(let i=left; i<=right; i++){ //O(n)
                 let obj = arr[top][i];
                 result += obj;
             }
@@ -46,7 +50,7 @@ function spiralCopy(arr){
 
         //right col
         if(dir==='right'){
-            for(let i=top; i<=bott; i++){
+            for(let i=top; i<=bott; i++){ //O(m)
                 let obj = arr[i][right];
                 result += obj;
             }
@@ -57,7 +61,7 @@ function spiralCopy(arr){
 
         //bott row
         if(dir==='bott'){
-            for(let i=right; i>=left; i--){
+            for(let i=right; i>=left; i--){ //O(n)
                 let obj = arr[bott][i];
                 console.log(result);
                 result += obj;
@@ -69,7 +73,7 @@ function spiralCopy(arr){
 
         //left col
         if(dir==='left'){
-            for(let i=bott; i>=top; i--){
+            for(let i=bott; i>=top; i--){ //O(m)
                 let obj = arr[i][left];
                 result += obj;
             }

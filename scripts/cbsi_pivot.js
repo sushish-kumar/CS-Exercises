@@ -14,8 +14,9 @@
 
 //3,4 => cant pivot
 
-
-// Time: O(n) + O(log n) = O(log n) => O(1)
+// Worst Case Efficiency: traverse each element in arr O(n)
+// Best Case:
+// Time: O(log n) => O(1) where n is size of the arr
 // Space: O(1)
 
 function getPivot(arr){
@@ -25,7 +26,7 @@ function getPivot(arr){
 
     if(arr[0] <= arr[arr.length-1]){ return 0; }
 
-    while(low <= high){ //O(n)
+    while(low <= high){ //O(log n)
         mid = low + Math.round((high-low)/2);
         console.log('mid',mid);
 
