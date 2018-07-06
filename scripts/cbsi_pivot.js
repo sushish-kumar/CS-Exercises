@@ -14,7 +14,11 @@
 
 //3,4 => cant pivot
 
-function getPivot(arr){ //Time: O(n) Space: O(1)
+
+// Time: O(n) + O(log n) = O(log n) => O(1)
+// Space: O(1)
+
+function getPivot(arr){
     let low = 0;
     let high = arr.length - 1;
     let mid = 0;
@@ -25,9 +29,9 @@ function getPivot(arr){ //Time: O(n) Space: O(1)
         mid = low + Math.round((high-low)/2);
         console.log('mid',mid);
 
-        if(arr[mid] < arr[mid-1]){ return mid; }
+        if(arr[mid] < arr[mid-1]){ return mid; } // O(1)
 
-        if(arr[mid] < arr[low]){
+        if(arr[mid] < arr[low]){ //O(log n)
             high = mid;
         }else{
             low = mid;
