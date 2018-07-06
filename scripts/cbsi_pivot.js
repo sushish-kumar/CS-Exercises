@@ -14,14 +14,14 @@
 
 //3,4 => cant pivot
 
-function getPivot(arr){
+function getPivot(arr){ //Time: O(n) Space: O(1)
     let low = 0;
     let high = arr.length - 1;
     let mid = 0;
 
     if(arr[0] <= arr[arr.length-1]){ return 0; }
 
-    while(low <= high){
+    while(low <= high){ //O(n)
         mid = low + Math.round((high-low)/2);
         console.log('mid',mid);
 
