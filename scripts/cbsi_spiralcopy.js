@@ -28,7 +28,7 @@ arr=[
 // Worst Case:
 // Time: O(n) * O(m) where n is the len of the arr, m is the len of sub-arr ?
 // Space: O(1)
-function spiralCopy(arr){
+function spiralCopy(arr){ //O(n) * ( O(n) + O(m) ) = O(n) * O(m)
     let top = 0,
         bott = arr.length-1,
         left = 0, //0
