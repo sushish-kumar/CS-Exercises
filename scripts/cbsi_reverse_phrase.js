@@ -24,13 +24,13 @@ function reverse(str) {
     var word = ""; // O(1)
 
     for (var i = str.length-1; i >= 0; i--) { // O(n)
-    if(str[i] === " "){             //if ele is space
-            if(word === "") continue;   //if prev ele was also space, skip ele
-            result += word + " ";       //else concat word + space to result
-            word = "";                  //clear word str
-            continue;                   //continue to next element
+        if(str[i] === " "){             //if ele is space
+            if(word === "") continue;       //if prev ele was also space, skip ele
+            result += word + " ";           //else concat word + space to result
+            word = "";                      //clear word str
+            continue;                       //continue to next element
         }
-        word = str[i] + word;       //else at ele to from of word str
+        word = str[i] + word;           //else at ele to from of word str
     }
 
     return result.trim(); // O(n) ?
