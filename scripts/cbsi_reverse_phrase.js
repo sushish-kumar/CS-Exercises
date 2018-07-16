@@ -66,5 +66,5 @@ console.log(reverse(str));
 str = " ";                  //single space
 console.log(reverse(str));
 
-str = " apple ";                  //space in first pos and last pos
+str = " apple ";            //space in first pos and last pos
 console.log(reverse(str));
