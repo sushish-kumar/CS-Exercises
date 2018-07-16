@@ -12,7 +12,7 @@
 // #############################################################
 // Solution I:
 //     Loop through every element from end of str to beg.
-//     If alpha-numeric, concat char to tmp str (to front)
+//     If alpha-numeric, concat char to tmp str (to front of tmp str)
 //     If space, concat tmp str to result var
 
 // Runtime Complexity: O(n) + O(n) => O(n) => Linear (where n is the len of input str)
@@ -20,20 +20,20 @@
 // #############################################################
 
 function reverse(str) {
-    var result = ""; // O(1)
-    var word = ""; // O(1)
+    var result = "";                                                                // Space: O(1)
+    var word = "";                                                                  // Space: O(1)
 
-    for (var i = str.length-1; i >= 0; i--) { // O(n)
-        if(str[i] === " "){             //if ele is space
-            if(word === "") continue;       //if prev ele was also space, skip ele
-            result += word + " ";           //else concat word + space to result
-            word = "";                      //clear word str
+    for (var i = str.length-1; i >= 0; i--) {                                       // Runtime: O(n) Space: O(1)
+        if(str[i] === " "){             //if ele is space                           // Runtime: O(1)
+            if(word === "") continue;       //if prev ele was also space, skip ele  // Runtime: O(1)
+            result += word + " ";           //else concat word + space to result    // Runtime: O(1)
+            word = "";                      //clear word str                        // Runtime: O(1)
             continue;                       //continue to next element
         }
-        word = str[i] + word;           //else at ele to from of word str
+        word = str[i] + word;           //else at ele to from of word str           // Runtime: O(1)
     }
 
-    return result.trim(); // O(n) ?
+    return result.trim();                                                           // Runtime: O(n) ?
 }
 
 // #############################################################
