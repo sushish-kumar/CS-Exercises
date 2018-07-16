@@ -1,5 +1,4 @@
 // Reverse Phrase (JS)
-
 // Given an input string, reverse the string word by word.
 //
 // Given s = "the sky is blue",
@@ -10,6 +9,7 @@
 // If there are multiple spaces between words, reduce them to a single space in the reversed string.
 
 
+// #############################################################
 // Solution I:
 //     Loop through every element from end of str to beg.
 //     If alpha-numeric, concat char to tmp str (to front)
@@ -17,6 +17,7 @@
 
 // Runtime Complexity: O(n) + O(n) => O(n) => Linear
 // Space Complexity: O(1)
+// #############################################################
 
 function reverse(str) {
     var result = ""; // O(1)
@@ -35,29 +36,32 @@ function reverse(str) {
     return result.trim(); // O(n) ?
 }
 
+// #############################################################
 // Solution II:
 //     TBA
 
 // Runtime Complexity: ?
 // Space Complexity: ?
+// #############################################################
 
 function reverseOptimal(str){
 
 }
 
+
+// Expected Case
 let str = "the sky is blue";
 console.log(reverse(str));
 
-
-// edge cases
-str = "sky ";
+// Edge Cases
+str = "sky ";               //one word, one space
 console.log(reverse(str));
 
-str = "";
+str = "";                   //empty str
 console.log(reverse(str));
 
-str = "the  sky  is  blue";
+str = "the  sky  is  blue"; //double spaces
 console.log(reverse(str));
 
-str = " ";
+str = " ";                  //single space
 console.log(reverse(str));
