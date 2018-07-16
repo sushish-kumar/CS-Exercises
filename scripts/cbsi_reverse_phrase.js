@@ -68,3 +68,11 @@ console.log(reverse(str));
 
 str = " apple ";            //space in first pos and last pos
 console.log(reverse(str));
+
+// Questions
+// What's the runtime of str.len?
+// What's the runtime of str.trim()'?
+// Does it matter?
+// (Worst Case for both is Linear O(n) because we can loop thru each ele and keep a count or check for space.)
+// (Assume it's the most efficient possible given it was implemented by JS)
+// (In most cases, it doesn't matter because we take the worst case runtime which would be O(n) + the default runtime is always most efficient possible.)
