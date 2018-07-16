@@ -13,6 +13,7 @@
 // If divisible by 3 evenly, log Fizz
 // If divisible by 5 evenly, log Buzz
 // If divisible by 3 and 5 evenly, log FizzBuzz
+// Else, print num
 
 // Runtime: O(n) => Linear (where n is num)
 // Space: O(1) => Constant (where input len does not matter)
