@@ -15,8 +15,8 @@
 //     If alpha-numeric, concat char to tmp str (to front)
 //     If space, concat tmp str to result var
 
-// Runtime Complexity: O(n) + O(n) => O(n) => Linear
-// Space Complexity: O(1)
+// Runtime Complexity: O(n) + O(n) => O(n) => Linear (where n is the len of input str)
+// Space Complexity: O(1) => Constant (where len of input does not matter)
 // #############################################################
 
 function reverse(str) {
@@ -38,7 +38,7 @@ function reverse(str) {
 
 // #############################################################
 // Solution II:
-//     TBA
+//     Is there a more optimal solution ?
 
 // Runtime Complexity: ?
 // Space Complexity: ?
@@ -64,4 +64,7 @@ str = "the  sky  is  blue"; //double spaces
 console.log(reverse(str));
 
 str = " ";                  //single space
+console.log(reverse(str));
+
+str = " apple ";                  //space in first pos and last pos
 console.log(reverse(str));
